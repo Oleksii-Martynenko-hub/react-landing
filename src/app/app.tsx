@@ -1,3 +1,4 @@
+import About from 'src/components/sections/about';
 import styled from 'styled-components';
 
 const StyledApp = styled.div`
@@ -7,7 +8,13 @@ const StyledApp = styled.div`
 export function App() {
   return (
     <StyledApp>
-      <h1>My Super free custom App</h1>
+      {/* Header */}
+
+      <main>
+        <About />
+      </main>
+
+      {/* Footer */}
     </StyledApp>
   );
 }

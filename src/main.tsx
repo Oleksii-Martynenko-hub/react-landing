@@ -398,22 +398,6 @@ root.render(
   <StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <img
-        src="src/assets/about/Vector-1.svg"
-        alt="vector shape with gray background"
-      />
-      <img
-        src="src/assets/about/Vector-2.svg"
-        alt="vector shape with red to yellow gradient in background"
-      />
-      <img
-        src="src/assets/about/Vector-3.svg"
-        alt="vector shape with red to yellow gradient in background"
-      />
-      <img
-        src="src/assets/about/Vector-4.svg"
-        alt="vector shape with red to yellow gradient in background"
-      />
 
       <App />
     </ThemeProvider>

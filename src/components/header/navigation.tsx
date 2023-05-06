@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-import Logo from '../common/logo/logo';
 
 /* eslint-disable-next-line */
 export interface NavigationProps {}
 
 const StyledNavigation = styled.nav`
-  padding: 0 100px;
+  padding: 0 90px;
 `;
 
 const NavList = styled.ul`
@@ -14,7 +13,7 @@ const NavList = styled.ul`
 
 const NavItem = styled.li`
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 33px;
   }
 `;
 
@@ -22,12 +21,15 @@ const NavLink = styled.a`
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
-
   letter-spacing: -0.02em;
-  text-decoration-line: underline;
   text-transform: uppercase;
-
   color: ${({ theme }) => theme.palette.text.light};
+  border-bottom: 1px solid ${({ theme }) => theme.palette.text.light};
+  transition: border-bottom 0.2s ease;
+
+  &:hover {
+    border-bottom: 1px solid transparent;
+  }
 `;
 
 export function Navigation(props: NavigationProps) {

@@ -1,6 +1,8 @@
 import styled from 'styled-components';
-import Logo from '../common/logo/logo';
+
+import Logo from 'src/components/common/logo/logo';
 import Navigation from './navigation';
+import AuthButtons from './auth-buttons';
 
 /* eslint-disable-next-line */
 export interface HeaderProps {}
@@ -12,16 +14,23 @@ const StyledHeader = styled.header`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-color: ${({ theme }) => theme.palette.text.secondaryOpacity};
   padding: 36px 36px 36px 40px;
+`;
+
+const LogoWrapper = styled.div`
+  margin-right: auto;
 `;
 
 export function Header(props: HeaderProps) {
   return (
     <StyledHeader>
-      <Logo />
+      <LogoWrapper>
+        <Logo />
+      </LogoWrapper>
 
       <Navigation />
+
+      <AuthButtons />
     </StyledHeader>
   );
 }

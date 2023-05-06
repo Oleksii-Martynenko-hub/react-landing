@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import About from './about';
+import Services from './services';
 
-describe('About', () => {
+describe('Services', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<About />);
+    const { baseElement } = render(<Services />);
     expect(baseElement).toBeTruthy();
   });
 });

@@ -46,6 +46,8 @@ const WaveVector = styled.img`
 `;
 
 const GuyWithPencil = styled.img`
+  position: relative;
+  z-index: 1;
   display: block;
   margin: 0 auto;
   padding-left: 79px;

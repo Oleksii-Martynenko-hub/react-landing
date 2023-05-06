@@ -1,3 +1,4 @@
+import CommonContainer from 'src/components/common/common-container';
 import About from 'src/components/sections/about';
 import styled from 'styled-components';
 
@@ -11,7 +12,9 @@ export function App() {
       {/* Header */}
 
       <main>
-        <About />
+        <CommonContainer>
+          <About />
+        </CommonContainer>
       </main>
 
       {/* Footer */}

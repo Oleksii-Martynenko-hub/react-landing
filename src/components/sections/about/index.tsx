@@ -9,7 +9,7 @@ export interface AboutProps {}
 const StyledAbout = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 283px 173px;
+  padding: 283px 0;
 `;
 
 export function About(props: AboutProps) {

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Logo from '../common/logo/logo';
 
 /* eslint-disable-next-line */
 export interface HeaderProps {}
@@ -14,7 +15,7 @@ const StyledHeader = styled.header`
 export function Header(props: HeaderProps) {
   return (
     <StyledHeader>
-      <h1>Welcome to Header!</h1>
+      <Logo />
     </StyledHeader>
   );
 }

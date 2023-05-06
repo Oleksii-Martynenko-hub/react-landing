@@ -1,3 +1,4 @@
+import Button from 'src/components/common/button/button';
 import styled from 'styled-components';
 
 const StyledMainContent = styled.div``;
@@ -21,7 +22,7 @@ const Title = styled.h2`
 
 const Text = styled.p`
   max-width: 511px;
-  margin: 0 0 40px 0;
+  margin: 0 0 42px 0;
 `;
 
 export function MainContent() {
@@ -39,6 +40,8 @@ export function MainContent() {
         creating a profile with media content posted as Non fungible Tokens that
         can be owned and traded on the Tokners network
       </Text>
+
+      <Button>Learn More</Button>
     </StyledMainContent>
   );
 }

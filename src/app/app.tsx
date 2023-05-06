@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+import CommonContainer from 'src/components/common/common-container';
+import About from 'src/components/sections/about';
+import Vectors from 'src/components/vectors';
+import Header from 'src/components/header/header';
+
 const StyledApp = styled.div`
   // Your style here
 `;
@@ -7,7 +12,17 @@ const StyledApp = styled.div`
 export function App() {
   return (
     <StyledApp>
-      <h1>My Super free custom App</h1>
+      <Header />
+
+      <main>
+        <Vectors />
+
+        <CommonContainer>
+          <About />
+        </CommonContainer>
+      </main>
+
+      {/* Footer */}
     </StyledApp>
   );
 }

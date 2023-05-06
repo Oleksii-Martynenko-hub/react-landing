@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-import Vectors from './vectors';
 import MainContent from './main-content';
 
 /* eslint-disable-next-line */
@@ -15,8 +14,6 @@ const StyledAbout = styled.div`
 export function About(props: AboutProps) {
   return (
     <StyledAbout>
-      <Vectors />
-
       <MainContent />
     </StyledAbout>
   );

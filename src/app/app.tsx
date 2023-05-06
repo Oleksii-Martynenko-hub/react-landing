@@ -1,6 +1,8 @@
+import styled from 'styled-components';
+
 import CommonContainer from 'src/components/common/common-container';
 import About from 'src/components/sections/about';
-import styled from 'styled-components';
+import Vectors from 'src/components/vectors';
 
 const StyledApp = styled.div`
   // Your style here
@@ -12,6 +14,8 @@ export function App() {
       {/* Header */}
 
       <main>
+        <Vectors />
+
         <CommonContainer>
           <About />
         </CommonContainer>

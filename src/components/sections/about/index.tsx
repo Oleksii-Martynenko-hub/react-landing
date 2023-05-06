@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import MainContent from './main-content';
+import People from './people';
 
 /* eslint-disable-next-line */
 export interface AboutProps {}
@@ -15,6 +16,8 @@ export function About(props: AboutProps) {
   return (
     <StyledAbout>
       <MainContent />
+
+      <People />
     </StyledAbout>
   );
 }

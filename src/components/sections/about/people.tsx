@@ -6,7 +6,7 @@ const StyledPeople = styled.div`
 `;
 
 const FirstGuy = styled.img`
-  position: relative;
+  position: absolute;
   top: -164px;
   right: 202px;
   z-index: 1;

@@ -1,5 +1,7 @@
-import Button from 'src/components/common/button/button';
 import styled from 'styled-components';
+
+import Button from 'src/components/common/button/button';
+import Title from 'src/components/common/title/title';
 
 const StyledMainContent = styled.div``;
 
@@ -11,11 +13,7 @@ const SubTitle = styled.h3`
   margin: 0 0 2px 0;
 `;
 
-const Title = styled.h2`
-  color: ${({ theme }) => theme.palette.text.primary};
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 54px;
+const StyledTitle = styled(Title)`
   max-width: 553px;
   margin: 0 0 33px 0;
 `;
@@ -30,9 +28,9 @@ export function MainContent() {
     <StyledMainContent>
       <SubTitle>At Tokners are</SubTitle>
 
-      <Title>
+      <StyledTitle size="large">
         Reimagining social media through the power of the blockchain.
-      </Title>
+      </StyledTitle>
 
       <Text>
         We are creating social media 3.0 with influencers, celebrities and

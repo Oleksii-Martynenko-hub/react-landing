@@ -8,13 +8,14 @@ import AuthButtons from './auth-buttons';
 export interface HeaderProps {}
 
 const StyledHeader = styled.header`
-  position: fixed;
+  position: absolute;
   top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   padding: 36px 36px 36px 40px;
+  z-index: 100;
 `;
 
 const LogoWrapper = styled.div`

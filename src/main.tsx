@@ -385,7 +385,9 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: Ubuntu, Roboto, sans-serif;
     font-size: 16px;
-    color: ${({ theme }) => theme.palette.text.primary};
+    font-weight: 300;
+    line-height: 24px;
+    color: ${({ theme }) => theme.palette.text.primaryOpacity};
     background-color: ${({ theme }) => theme.palette.colors.body};
   }
 `;

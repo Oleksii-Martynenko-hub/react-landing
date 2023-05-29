@@ -1,5 +1,6 @@
-import Title from 'src/components/common/title/title';
 import styled from 'styled-components';
+
+import Title from 'src/components/common/title/title';
 
 /* eslint-disable-next-line */
 export interface ForHoldersCardProps {}
@@ -7,10 +8,11 @@ export interface ForHoldersCardProps {}
 const StyledForHoldersCard = styled.div`
   position: relative;
   overflow: hidden;
-  background-color: ${({ theme }) => theme.palette.colors.serviceCards};
-  padding: 40px 69px 0 64px;
+  background-image: ${({ theme }) => theme.palette.colors.serviceCardsGradient};
+  padding: 40px 69px 592px 64px;
   max-width: 777px;
   border-radius: 25px;
+  flex: 1 1 calc(50% - 10px);
 `;
 
 const CardNumber = styled.p`
@@ -39,18 +41,11 @@ const Text = styled.p`
   margin: 0 0 -12px 0;
 `;
 
-const WaveVector = styled.img`
-  position: absolute;
-  left: 0;
-  bottom: 0;
-`;
-
 const GuyWithCoffee = styled.img`
-  position: relative;
-  z-index: 1;
-  display: block;
-  margin: 0 auto;
-  padding-left: 182px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% + 122px);
+  transform: translateX(-50%);
 `;
 
 export function ForHoldersCard(props: ForHoldersCardProps) {
@@ -70,11 +65,6 @@ export function ForHoldersCard(props: ForHoldersCardProps) {
         content with early token buyers being the biggest winners as the value
         of the token increases with more buyers.
       </Text>
-
-      <WaveVector
-        src="src/assets/images/services/vector_second_card.svg"
-        alt="gray wave vector"
-      />
 
       <GuyWithCoffee
         src="src/assets/images/services/gut_with_coffee.png"

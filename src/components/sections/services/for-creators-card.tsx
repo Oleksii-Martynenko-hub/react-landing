@@ -1,5 +1,6 @@
-import Title from 'src/components/common/title/title';
 import styled from 'styled-components';
+
+import Title from 'src/components/common/title/title';
 
 /* eslint-disable-next-line */
 export interface ForCreatorsCardProps {}
@@ -7,10 +8,12 @@ export interface ForCreatorsCardProps {}
 const StyledForCreatorsCard = styled.div`
   position: relative;
   overflow: hidden;
-  background-color: ${({ theme }) => theme.palette.colors.serviceCards};
-  padding: 40px 64px 0 69px;
+  background-image: ${({ theme }) => theme.palette.colors.serviceCardsGradient};
+  padding: 40px 64px 640px 69px;
   max-width: 777px;
   border-radius: 25px;
+  flex: 1 1 calc(50% - 10px);
+  margin: 0 20px 0 0;
 `;
 
 const CardNumber = styled.p`
@@ -36,21 +39,14 @@ const StyledTitle = styled(Title)`
 const Text = styled.p`
   letter-spacing: 0.33px;
   text-align: center;
-  margin: 0 0 67px 0;
-`;
-
-const WaveVector = styled.img`
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  /* margin: 0 0 67px 0; */
 `;
 
 const GuyWithPencil = styled.img`
-  position: relative;
-  z-index: 1;
-  display: block;
-  margin: 0 auto;
-  padding-left: 79px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% + 42px);
+  transform: translateX(-50%);
 `;
 
 export function ForCreatorsCard(props: ForCreatorsCardProps) {
@@ -68,11 +64,6 @@ export function ForCreatorsCard(props: ForCreatorsCardProps) {
         also their star power. They own 10-15% of the total value of the tokens
         minted.
       </Text>
-
-      <WaveVector
-        src="src/assets/images/services/vector_first_card.svg"
-        alt="gray wave vector"
-      />
 
       <GuyWithPencil
         src="src/assets/images/services/guy_with_pencil.png"

@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 import CommonContainer from 'src/components/common/common-container';
-import About from 'src/components/sections/about/about';
 import Vectors from 'src/components/vectors';
 import Header from 'src/components/header/header';
+import About from 'src/components/sections/about/about';
 import Services from 'src/components/sections/services/services';
+import OurDifferences from 'src/components/sections/our-differences/our-differences';
 
 const StyledApp = styled.div`
   // Your style here
@@ -23,6 +24,8 @@ export function App() {
 
           <Services />
         </CommonContainer>
+
+        <OurDifferences />
       </main>
 
       {/* Footer */}

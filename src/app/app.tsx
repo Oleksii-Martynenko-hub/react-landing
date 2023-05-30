@@ -6,6 +6,7 @@ import Header from 'src/components/header/header';
 import About from 'src/components/sections/about/about';
 import Services from 'src/components/sections/services/services';
 import OurDifferences from 'src/components/sections/our-differences/our-differences';
+import Timeline from 'src/components/sections/timeline/timeline';
 
 const StyledApp = styled.div`
   // Your style here
@@ -26,6 +27,10 @@ export function App() {
         </CommonContainer>
 
         <OurDifferences />
+
+        <CommonContainer>
+          <Timeline />
+        </CommonContainer>
       </main>
 
       {/* Footer */}

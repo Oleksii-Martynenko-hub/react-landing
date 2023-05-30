@@ -13,7 +13,8 @@ export const theme = {
     },
     colors: {
       body: '#F7F5F9',
-      serviceCards: '#F2F0F4',
+      serviceCardsGradient:
+        'linear-gradient(#f2f0f4 40%, rgba(242, 240, 244, 0.97) 40%)',
       footerBackground: '#1D1534',
       timelineDots: '#2278D4',
       mainBtn: '#22A75D',

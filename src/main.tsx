@@ -385,7 +385,9 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: Ubuntu, Roboto, sans-serif;
     font-size: 16px;
-    color: ${({ theme }) => theme.palette.text.primary};
+    font-weight: 300;
+    line-height: 24px;
+    color: ${({ theme }) => theme.palette.text.primaryOpacity};
     background-color: ${({ theme }) => theme.palette.colors.body};
   }
 `;
@@ -398,22 +400,6 @@ root.render(
   <StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <img
-        src="src/assets/about/Vector-1.svg"
-        alt="vector shape with gray background"
-      />
-      <img
-        src="src/assets/about/Vector-2.svg"
-        alt="vector shape with red to yellow gradient in background"
-      />
-      <img
-        src="src/assets/about/Vector-3.svg"
-        alt="vector shape with red to yellow gradient in background"
-      />
-      <img
-        src="src/assets/about/Vector-4.svg"
-        alt="vector shape with red to yellow gradient in background"
-      />
 
       <App />
     </ThemeProvider>

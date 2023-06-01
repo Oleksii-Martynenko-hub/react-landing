@@ -20,7 +20,8 @@ const Index = styled.p`
   line-height: 288px;
   opacity: 0.08;
   color: ${({ theme }) => theme.palette.colors.lightBtn};
-  text-shadow: 0 0 0 1px rgb(25, 27, 33, 1);
+  text-shadow: 1px 0 0 rgb(25, 27, 33, 1), 0 1px 0 rgb(25, 27, 33, 1),
+    -1px 0 0 rgb(25, 27, 33, 1), 0 -1px 0 rgb(25, 27, 33, 1);
 `;
 
 export function PhaseCard({ index, phase }: PhaseCardProps) {

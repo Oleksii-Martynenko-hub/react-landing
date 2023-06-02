@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import PhaseCard from './phase-card';
+import HowToBuy from './how-to-buy';
 import Title from 'src/components/common/title/title';
 import CommonContainer from 'src/components/common/common-container';
 
@@ -21,7 +22,7 @@ const StyledPresale = styled.div`
   background: url('src/assets/images/presale-details/vector_background.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding: 439px 0 300px;
+  padding: 439px 0 206px;
   margin-top: -320px;
 `;
 
@@ -34,7 +35,7 @@ const StyledTitle = styled(Title)`
 
 const ListWrapper = styled.div`
   position: relative;
-  margin: 0 0 90px 0;
+  margin: 0 0 88px 0;
 `;
 
 const PhaseList = styled.ul`
@@ -112,6 +113,8 @@ export function Presale(props: PresaleProps) {
               alt="guys in orange jackets"
             />
           </ListWrapper>
+
+          <HowToBuy />
         </ContentWrapper>
       </CommonContainer>
     </StyledPresale>

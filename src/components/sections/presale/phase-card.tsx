@@ -8,18 +8,23 @@ export interface PhaseCardProps {
   phase: Phase;
 }
 
-const StyledPhaseCard = styled.div`
+const StyledPhaseCard = styled.li`
   background: ${({ theme }) => theme.palette.colors.lightBtn};
   flex: auto;
   max-width: 511px;
-  padding: 57px 90px 179px 91px;
+  padding: 57px 30px 179px 30px;
   border-radius: 25px;
+
+  &:not(:last-child) {
+    margin: 0 20px 0 0;
+  }
 `;
 
 const Index = styled.p`
   font-weight: 700;
   font-size: 292px;
   line-height: 222px;
+  text-align: center;
   opacity: 0.08;
   color: ${({ theme }) => theme.palette.colors.lightBtn};
   text-shadow: 1px 0 ${({ theme }) => theme.palette.text.primary},

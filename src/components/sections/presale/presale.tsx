@@ -1,7 +1,8 @@
-import CommonContainer from 'src/components/common/common-container';
-import Title from 'src/components/common/title/title';
 import styled from 'styled-components';
+
 import PhaseCard from './phase-card';
+import Title from 'src/components/common/title/title';
+import CommonContainer from 'src/components/common/common-container';
 
 /* eslint-disable-next-line */
 export interface PresaleProps {}
@@ -20,7 +21,7 @@ const StyledPresale = styled.div`
   background: url('src/assets/images/presale-details/vector_background.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding: 417px 0 300px;
+  padding: 439px 0 300px;
   margin-top: -320px;
 `;
 
@@ -28,12 +29,32 @@ const ContentWrapper = styled.div``;
 
 const StyledTitle = styled(Title)`
   text-align: center;
-  margin: 0 0 40px 0;
+  margin: 0 0 44px 0;
+`;
+
+const ListWrapper = styled.div`
+  position: relative;
+  margin: 0 0 90px 0;
 `;
 
 const PhaseList = styled.ul`
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+`;
+
+const GuyImage = styled.img`
+  position: absolute;
+  bottom: -52px;
+  left: 33%;
+  transform: translateX(-62%);
+`;
+
+const PeopleImage = styled.img`
+  position: absolute;
+  bottom: -57px;
+  right: 33%;
+  transform: translateX(54%);
 `;
 
 export function Presale(props: PresaleProps) {
@@ -75,11 +96,22 @@ export function Presale(props: PresaleProps) {
             Presale Details
           </StyledTitle>
 
-          <PhaseList>
-            {phases.map((phase, i) => (
-              <PhaseCard key={phase.title + i} index={i + 1} phase={phase} />
-            ))}
-          </PhaseList>
+          <ListWrapper>
+            <PhaseList>
+              {phases.map((phase, i) => (
+                <PhaseCard key={phase.title + i} index={i + 1} phase={phase} />
+              ))}
+            </PhaseList>
+
+            <GuyImage
+              src="src/assets/images/presale-details/guy_with_tablet.png"
+              alt="guy with tablet"
+            />
+            <PeopleImage
+              src="src/assets/images/presale-details/guys_in_orange_jackets.png"
+              alt="guys in orange jackets"
+            />
+          </ListWrapper>
         </ContentWrapper>
       </CommonContainer>
     </StyledPresale>

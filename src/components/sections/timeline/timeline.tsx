@@ -69,11 +69,23 @@ const EventList = styled.ul`
 `;
 
 const TimelineItem = styled.li`
+  position: relative;
   max-width: 359px;
   width: calc((100% - 120px) / 4);
 
   &:not(:last-child) {
     margin: 0 40px 0 0;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 38px;
+      left: 230px;
+      width: 24px;
+      aspect-ratio: 1;
+      background: url('src/assets/images/timeline/right_arrow_icon.svg');
+    }
   }
 
   &:last-child {

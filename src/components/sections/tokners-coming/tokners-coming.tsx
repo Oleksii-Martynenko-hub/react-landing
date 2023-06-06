@@ -6,7 +6,7 @@ import styled from 'styled-components';
 export interface ToknersComingProps {}
 
 const StyledToknersComing = styled.div`
-  z-index: 1;
+  z-index: 2;
   position: relative;
   background: url('src/assets/images/tokners-coming/vector_background.svg');
   background-size: 100% 100%;

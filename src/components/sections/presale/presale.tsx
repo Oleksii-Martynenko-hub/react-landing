@@ -19,6 +19,8 @@ export type Phase = {
 };
 
 const StyledPresale = styled.div`
+  z-index: 1;
+  position: relative;
   background: url('src/assets/images/presale-details/vector_background.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;

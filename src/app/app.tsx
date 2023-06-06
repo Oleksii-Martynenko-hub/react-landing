@@ -9,6 +9,7 @@ import OurDifferences from 'src/components/sections/our-differences/our-differen
 import Timeline from 'src/components/sections/timeline/timeline';
 import ToknersComing from 'src/components/sections/tokners-coming/tokners-coming';
 import Presale from 'src/components/sections/presale/presale';
+import Footer from 'src/components/footer/footer';
 
 const StyledApp = styled.div`
   // Your style here
@@ -39,7 +40,7 @@ export function App() {
         <Presale />
       </main>
 
-      {/* Footer */}
+      <Footer />
     </StyledApp>
   );
 }

@@ -6,6 +6,7 @@ const StyledCommonContainer = styled.div`
   max-width: 1920px;
   padding: 0 173px;
   margin: 0 auto;
+  overflow: hidden;
 `;
 
 /* eslint-disable-next-line */

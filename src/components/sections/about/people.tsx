@@ -9,14 +9,14 @@ const StyledPeople = styled.div`
 const FirstGuy = styled.img`
   position: absolute;
   top: -164px;
-  right: calc(50% - 193px);
+  right: calc(33% - 135px);
   z-index: 1;
 `;
 
 const SecondGuy = styled.img`
   position: absolute;
   top: -163px;
-  right: calc(50% - 576px);
+  right: calc(33% - 510px);
 `;
 
 export function People() {

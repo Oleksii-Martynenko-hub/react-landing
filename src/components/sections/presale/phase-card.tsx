@@ -22,7 +22,7 @@ const StyledPhaseCard = styled.li`
 
 const Index = styled.p`
   font-weight: 700;
-  font-size: 292px;
+  font-size: calc(15vw + 2px);
   line-height: 222px;
   text-align: center;
   opacity: 0.08;

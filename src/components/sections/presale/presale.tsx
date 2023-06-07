@@ -48,14 +48,14 @@ const PhaseList = styled.ul`
 
 const GuyImage = styled.img`
   position: absolute;
-  bottom: -52px;
+  bottom: calc(11vw - 265px);
   left: 33%;
   transform: translateX(-62%);
 `;
 
 const PeopleImage = styled.img`
   position: absolute;
-  bottom: -57px;
+  bottom: calc(12vw - 289px);
   right: 33%;
   transform: translateX(54%);
 `;

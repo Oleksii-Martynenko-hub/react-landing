@@ -23,7 +23,7 @@ const CardNumber = styled.p`
   text-align: center;
   color: ${({ theme }) => theme.palette.text.primary};
   opacity: 0.3;
-  margin: 0 0 40px 0;
+  margin: 0 0 38px 0;
 `;
 
 const GreenTitle = styled.span`

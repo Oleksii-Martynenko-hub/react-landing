@@ -8,18 +8,22 @@ export interface LogoProps extends React.HTMLAttributes<HTMLImageElement> {
 const StyledLogo = styled.img``;
 
 export function Logo({ isLight = false, ...props }: LogoProps) {
-  return !isLight ? (
-    <StyledLogo
-      src="src/assets/images/logo_full.png"
-      alt="logo with dark text"
-      {...props}
-    />
-  ) : (
-    <StyledLogo
-      src="src/assets/images/footer/logo_white_text.png"
-      alt="logo with white text"
-      {...props}
-    />
+  return (
+    <a href="/" style={{ display: 'inline-block' }}>
+      {!isLight ? (
+        <StyledLogo
+          src="src/assets/images/logo_full.png"
+          alt="logo with dark text"
+          {...props}
+        />
+      ) : (
+        <StyledLogo
+          src="src/assets/images/footer/logo_white_text.png"
+          alt="logo with white text"
+          {...props}
+        />
+      )}
+    </a>
   );
 }
 

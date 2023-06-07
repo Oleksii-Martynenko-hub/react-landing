@@ -9,7 +9,7 @@ const StyledForHoldersCard = styled.div`
   position: relative;
   overflow: hidden;
   background-image: ${({ theme }) => theme.palette.colors.serviceCardsGradient};
-  padding: 40px 69px 592px 64px;
+  padding: 40px 69px 594px 64px;
   max-width: 777px;
   border-radius: 25px;
   flex: 1 1 calc(50% - 10px);
@@ -22,7 +22,7 @@ const CardNumber = styled.p`
   text-align: center;
   color: ${({ theme }) => theme.palette.text.primary};
   opacity: 0.3;
-  margin: 0 0 40px 0;
+  margin: 0 0 38px 0;
 `;
 
 const BlueTitle = styled.span`

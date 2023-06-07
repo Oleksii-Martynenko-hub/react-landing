@@ -21,6 +21,7 @@ const ContentWrapper = styled.div`
 
 const MainContent = styled.div`
   max-width: 644px;
+  flex: 0 0 max(47%, 400px);
   padding: 83px 0 0;
   margin: 0 auto 0 0;
 `;
@@ -44,7 +45,9 @@ const ImagesWrapper = styled.div`
   background: ${({ theme }) => theme.palette.colors.body};
   border-radius: 25px;
   max-width: 777px;
+  flex: 0 1 50%;
   padding: 85px 97px 20px;
+  margin: 0 0 0 72px;
 `;
 
 const Image = styled.img`
@@ -60,7 +63,7 @@ const LargeCloud = styled(Image)`
 `;
 
 const RocketImage = styled(Image)`
-  margin: -91px 0 -140px -324px;
+  margin: -91px -200px -140px -324px;
 `;
 
 export function ToknersComing(props: ToknersComingProps) {

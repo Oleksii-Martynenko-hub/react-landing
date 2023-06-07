@@ -3,19 +3,20 @@ import styled from 'styled-components';
 const StyledPeople = styled.div`
   position: relative;
   padding: 0 0;
+  flex: 1 1 auto;
 `;
 
 const FirstGuy = styled.img`
   position: absolute;
   top: -164px;
-  right: 202px;
+  right: calc(50% - 193px);
   z-index: 1;
 `;
 
 const SecondGuy = styled.img`
   position: absolute;
   top: -163px;
-  right: -173px;
+  right: calc(50% - 576px);
 `;
 
 export function People() {

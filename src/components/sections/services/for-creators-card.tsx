@@ -9,7 +9,7 @@ const StyledForCreatorsCard = styled.div`
   position: relative;
   overflow: hidden;
   background-image: ${({ theme }) => theme.palette.colors.serviceCardsGradient};
-  padding: 40px 64px 640px 69px;
+  padding: 40px 64px 642px 69px;
   max-width: 777px;
   border-radius: 25px;
   flex: 1 1 calc(50% - 10px);

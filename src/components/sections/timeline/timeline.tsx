@@ -81,7 +81,7 @@ const TimelineItem = styled.li`
       display: block;
       position: absolute;
       top: 38px;
-      left: 230px;
+      left: calc((100% + 40px) / 2 + 30px);
       width: 24px;
       aspect-ratio: 1;
       background: url('src/assets/images/timeline/right_arrow_icon.svg');

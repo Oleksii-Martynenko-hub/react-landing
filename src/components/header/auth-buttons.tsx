@@ -27,6 +27,11 @@ const SignInButton = styled.button`
   &:hover span {
     border-bottom: 1px solid transparent;
   }
+
+  ${({ theme }) => theme.media.lg} {
+    font-size: 12px;
+    margin: 0 10px 0 0;
+  }
 `;
 
 const SignUpButton = styled(Button)`
@@ -37,6 +42,12 @@ const SignUpButton = styled(Button)`
 
   &:hover {
     filter: brightness(0.98);
+  }
+
+  ${({ theme }) => theme.media.lg} {
+    font-size: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 `;
 

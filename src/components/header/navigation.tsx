@@ -5,6 +5,10 @@ export interface NavigationProps {}
 
 const StyledNavigation = styled.nav`
   padding: 0 90px;
+
+  ${({ theme }) => theme.media.lg} {
+    padding: 0 50px;
+  }
 `;
 
 const NavList = styled.ul`
@@ -14,6 +18,10 @@ const NavList = styled.ul`
 const NavItem = styled.li`
   &:not(:last-child) {
     margin-right: 33px;
+
+    ${({ theme }) => theme.media.lg} {
+      margin-right: 25px;
+    }
   }
 `;
 
@@ -29,6 +37,10 @@ const NavLink = styled.a`
 
   &:hover {
     border-bottom: 1px solid transparent;
+  }
+
+  ${({ theme }) => theme.media.lg} {
+    font-size: 12px;
   }
 `;
 

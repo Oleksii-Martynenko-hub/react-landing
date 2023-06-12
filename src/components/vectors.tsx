@@ -13,6 +13,11 @@ const StyledVector = styled.img`
     top: 0;
     right: 0;
   }
+
+  ${({ theme }) => theme.media.lg} {
+    transform: scale(0.7);
+    transform-origin: 100% 0%;
+  }
 `;
 
 const StyledFirstVector = styled(StyledVector)``;

@@ -7,6 +7,10 @@ const StyledCommonContainer = styled.div`
   padding: 0 173px;
   margin: 0 auto;
   overflow: hidden;
+
+  ${({ theme }) => theme.media.lg} {
+    padding: 0 80px;
+  }
 `;
 
 /* eslint-disable-next-line */

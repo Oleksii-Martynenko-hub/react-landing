@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom/client';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 
 import App from './app/app';
-import { theme } from './themes/palette';
+import { theme } from './themes/theme';
 
 const GlobalStyle = createGlobalStyle`
 

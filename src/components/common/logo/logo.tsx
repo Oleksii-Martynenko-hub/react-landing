@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 
-/* eslint-disable-next-line */
 export interface LogoProps extends React.HTMLAttributes<HTMLImageElement> {
   isLight?: boolean;
 }
 
-const StyledLogo = styled.img``;
+const StyledLogo = styled.img`
+  ${({ theme }) => theme.media.lg} {
+    width: 150px;
+  }
+`;
 
 export function Logo({ isLight = false, ...props }: LogoProps) {
   return (

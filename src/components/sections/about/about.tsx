@@ -10,6 +10,10 @@ const StyledAbout = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 283px 0 290px;
+
+  ${({ theme }) => theme.media.lg} {
+    padding: 180px 0 150px;
+  }
 `;
 
 export function About(props: AboutProps) {

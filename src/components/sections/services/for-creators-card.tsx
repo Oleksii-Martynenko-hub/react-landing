@@ -5,17 +5,30 @@ import Card from './card';
 /* eslint-disable-next-line */
 export interface ForCreatorsCardProps {}
 
+const StyledForCreatorsCard = styled(Card)`
+  padding: 40px 64px 642px 69px;
+  margin: 0 20px 0 0;
+
+  ${({ theme }) => theme.media.lg} {
+    padding: 20px 40px 410px;
+  }
+`;
+
 const GuyWithPencil = styled.img`
   position: absolute;
   bottom: 0;
   left: calc(50% + 42px);
   transform: translateX(-50%);
+
+  ${({ theme }) => theme.media.lg} {
+    transform: translateX(-50%) scale(0.7);
+    transform-origin: bottom;
+  }
 `;
 
 export function ForCreatorsCard(props: ForCreatorsCardProps) {
   return (
-    <Card
-      style={{ padding: '40px 64px 642px 69px', margin: '0 20px 0 0' }}
+    <StyledForCreatorsCard
       highlightedColor="green"
       carNumber="01"
       cardTitle={

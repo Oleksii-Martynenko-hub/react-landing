@@ -10,6 +10,10 @@ const StyledOurDifferences = styled.div`
   position: relative;
   background: #1d1534;
   padding: 165px 0 0;
+
+  ${({ theme }) => theme.media.lg} {
+    padding: 100px 0 0;
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -30,15 +34,29 @@ const BackgroundImages = styled.div`
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: top center, bottom center;
+
+  ${({ theme }) => theme.media.lg} {
+    top: -350px;
+    bottom: -170px;
+  }
 `;
 
 const StyledLogo = styled.img`
   margin: 7px 77px 0 0;
+
+  ${({ theme }) => theme.media.lg} {
+    margin: 7px 50px 0 0;
+  }
 `;
 
 const StyledTitle = styled(Title)`
   max-width: 356px;
   margin: 0 175px 0 0;
+
+  ${({ theme }) => theme.media.lg} {
+    min-width: 250px;
+    margin: 0 100px 0 0;
+  }
 `;
 
 const Text = styled.p`

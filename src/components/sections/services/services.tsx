@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-import ForCreatorsCard from './for-creators-card';
+
 import ForHoldersCard from './for-holders-card';
+import ForCreatorsCard from './for-creators-card';
 
 /* eslint-disable-next-line */
 export interface ServicesProps {}

@@ -10,7 +10,7 @@ const StyledForCreatorsCard = styled(Card)`
   margin: 0 20px 0 0;
 
   ${({ theme }) => theme.media.lg} {
-    padding: 20px 40px 410px;
+    padding: 36px 40px 410px;
   }
 `;
 

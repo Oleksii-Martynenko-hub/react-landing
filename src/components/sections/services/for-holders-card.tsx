@@ -9,7 +9,7 @@ const StyledForHoldersCard = styled(Card)`
   padding: 40px 69px 594px 64px;
 
   ${({ theme }) => theme.media.lg} {
-    padding: 20px 40px 410px;
+    padding: 36px 40px 410px;
   }
 `;
 

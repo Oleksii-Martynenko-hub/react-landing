@@ -23,11 +23,11 @@ const StyledCard = styled.div`
 const CardNumber = styled.p`
   font-weight: 500;
   font-size: 12px;
-  line-height: 54px;
+  line-height: 22px;
   text-align: center;
   color: ${({ theme }) => theme.palette.text.primary};
   opacity: 0.3;
-  margin: 0 0 38px 0;
+  margin: 0 0 22px 0;
 `;
 
 const StyledTitle = styled(Title)<{ highlightedColor: 'green' | 'blue' }>`

@@ -26,6 +26,21 @@ const StyledTitle = styled.h2<TitleProps>`
 
   font-weight: 500;
   line-height: 54px;
+
+  ${({ theme }) => theme.media.lg} {
+    font-size: ${({ size }) => {
+      switch (size) {
+        case 'large':
+          return '42px';
+        case 'medium':
+          return '30px';
+        default:
+          return '26px';
+      }
+    }};
+
+    line-height: 46px;
+  }
 `;
 
 export function Title({
